@@ -23,7 +23,7 @@ rare, but interesting.
 requirements
 ============
 
-gem install md5
+should be base ruby install
 
 installation
 ============
