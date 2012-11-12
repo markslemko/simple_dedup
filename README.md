@@ -15,12 +15,12 @@ installation
 
 copy dedup.rb into your ~/bin/ folder
 
-# cp dedup.rb ~/bin/
+> cp dedup.rb ~/bin/
 
 usage
 =====
 
-# dedup
+> dedup
 
 Run this within the folder that you want scanned for duplicates.
 
