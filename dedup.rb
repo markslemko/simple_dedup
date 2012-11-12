@@ -5,6 +5,7 @@ full_scan_list = Hash.new
 `mkdir ../dups`
 
 # scans directory and subdirectories for files
+p "duplicates:"
 Dir['./**/*'].each do | item |
   next unless File.file?(item)
 
@@ -18,6 +19,7 @@ Dir['./**/*'].each do | item |
     full_scan_list[md5.hexdigest] = item
   else
     # moves it out when duplicate
-    `mv #{item} ../dups/`
+    p "#{item}"
+    `mv "#{item}" ../dups/`
   end
 end
