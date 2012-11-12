@@ -5,6 +5,21 @@ does a folder/subfolder scan for duplicate files and moves them out to be handle
 
 Use this at your own risk! This can be -very- destructive if you are not careful!
 
+handy for removing duplicates of:
+* photos 
+* documents
+* music
+
+not so handy for removing duplicates of:
+* video
+* intentional backups
+
+file names are not used for comparison - this is a data only comparison, so it will read everything. 
+It is possible for false positives matches on files that are different, but that should be incredibly 
+rare, but interesting.
+
+:-)
+
 requirements
 ============
 
@@ -20,7 +35,7 @@ copy dedup.rb into your ~/bin/ folder
 usage
 =====
 
-> dedup
+> dedup.rb
 
 Run this within the folder that you want scanned for duplicates.
 
@@ -32,3 +47,4 @@ notes
 =====
 
 * use this at your own risk!
+
